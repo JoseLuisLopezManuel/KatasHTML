@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pastelero</title>
+        <style>
+            *{
+               box-sizing: border-box; 
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header{
+                background-color: violet;
+                padding: 20px;
+                text-align: center;
+                font-size: 25px;
+                color: white;
+            }
+            article{
+                float: left;
+                padding: 20px;
+                width: 100%;
+                background-color: rgb(160, 64, 224);
+                height: auto;
+            }
+            article1{
+                float: left;
+                padding: 20px;
+                font-size: auto;
+                width: 100%;
+                background-color: rgb(104, 47, 141);
+                height: auto;
+                text-align: center;
+            }
+            footer{
+                background-color: rgb(204, 40, 219);
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            @media(max-widht:600px){
+                article{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>¡Bienvenido Pastelero!</h1>
+            <img src="Pastel.png" alt="Pasteleria" width="150">
+        </header>
+        <section>
+            <article>
+                <form action="/accion.js" id="form1" method="post">
+                <h2>Cantidad de sabores que le quedan para hacer los pasteles</h2>
+                <label for="numero1">Pastel sabor chocolate</label><br>
+                <input type="number" id="numero1" name="numero1" min="1" max="5" value="5"><br><br>
+                <label for="numero2">Pastel sabor vainilla</label><br>
+                <input type="number" id="numero2" name="numero2" min="1" max="2" value="2"><br><br>
+                <label for="numero3">Pastel sabor napolitano</label><br>
+                <input type="number" id="numero3" name="numero3" min="1" max="5" value="5"><br><br>
+                <label for="numero4">Pastel sabor tres leches</label><br>
+                <input type="number" id="numero4" name="numero4" min="1" max="6" value="6"><br><br>
+                <label for="numero5">Pastel sabor fresa</label><br>
+                <input type="number" id="numero5" name="numero5" min="1" max="8" value="8"><br><br>
+                <label for="numero6">Pastel sabor cafe</label><br>
+                <input type="number" id="numero6" name="numero6" min="1" max="10" value="10"><br><br>
+
+                <h2>Cantidad de adornos que le quedan para hacer los pasteles</h2>
+                <label for="numero7">Pastel con fruta</label><br>
+                <input type="number" id="numero7" name="numero7" min="1" max="7" value="7"><br><br>
+                <label for="numero8">Pastel con flan</label><br>
+                <input type="number" id="numero8" name="numero8" min="1" max="3" value="3"><br><br>
+                <label for="numero9">Pastel con chantilly</label><br>
+                <input type="number" id="numero9" name="numero9" min="1" max="8" value="8"><br><br>
+                <label for="numero10">Pastel cubierto de chocolate</label><br>
+                <input type="number" id="numero10" name="numero10" min="1" max="5" value="5"><br><br>
+                <label for="numero11">Pastel cubierto de semillas</label><br>
+                <input type="number" id="numero11" name="numero11" min="1" max="4" value="4"><br><br>
+                <label for="numero12">Pastel con queso philadelphia</label><br>
+                <input type="number" id="numero12" name="numero12" min="1" max="2" value="2"><br><br>
+            </form>  
+            </article>
+            <article1>
+                <h2>Pedidos que se han realizado</h2>
+                <table>
+                    <tr>
+                        <th>Nombre del cliente</th>
+                        <th>Apellido del cliente</th>
+                        <th>Número del cliente</th>
+                        <th>Correo del cliente</th>
+                        <th>Descripcion del pastel</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="nombre" name="nombre"></td>
+                        <td><input type="text" id="apellido" name="apellido" form="form1"></td>
+                        <td><input type="tel" id="=numero" name="numero" maxlength="10"></td>
+                        <td> <input type="email" id="correo" name="correo"></td>
+                        <td><input type="text" id="input" name="input"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="nombre" name="nombre"></td>
+                        <td><input type="text" id="apellido" name="apellido" form="form1"></td>
+                        <td><input type="tel" id="=numero" name="numero" maxlength="10"></td>
+                        <td> <input type="email" id="correo" name="correo"></td>
+                        <td><input type="text" id="input" name="input"></td>
+                    </tr>
+                </table>
+            </article1>
+        </section>
+        <footer>
+            <h3> Av.Texcoco #36 CP. 35489</h3>
+            <h3> Comunizarse al 5564874412</h3>
+            <h3> Horarios de atencion:</h3>
+            <h3> Lunes 7:00 - 20:00 </h3>
+            <h3> Martes 7:00 - 20:00 </h3>
+            <h3> Miercoles 7:00 - 20:00 </h3>
+            <h3> Jueves 7:00 - 20:00 </h3>
+            <h3> Viernes 7:00 - 20:00 </h3>
+            <h3> Sábado 7:00 - 20:00 </h3>
+            <h3> Domingo 7:00 - 18:00 </h3>
+        </footer>
+    </body>
+</html>

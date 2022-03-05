@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+        <meta name="viewport"   content="width=device-width, initial-scale=1.0">
+        <title> Pasteleria </title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /* Estilo de header */
+    header {
+        background-color: rgb(211, 118, 183);
+        padding: 20px;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+    }
+    article1 {
+        float: left;
+        padding: 20px;
+        width: 50%;
+        background-color: #f5a5f1;
+        height: auto;
+    }
+    article2 {
+        float: right;
+        padding: 20px;
+        width: 50%;
+        background-color: #f5a5f1;
+        height: auto;
+    }
+    /* Estilo de footer */
+    footer {
+        background-color: rgb(230, 48, 154);
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+    /* Responsive layout */
+    @media (max-width: 600px) {
+        article1 {
+            width: 100%;
+            height: auto;
+        }
+        article2 {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>¡Bienvenidos a la Pasteleria!</h1>
+        <img src="Pastel.png" alt="Pasteleria" width="150">
+    </header>
+    <section>
+        <article1>
+        <h2>Menú de sabores de los pasteles </h2>
+            <p> Pastel sabor chocolate............... $200.00</p>
+            <p> Pastel sabor vainilla............... $150.00</p>
+            <p> Pastel sabor napolitano............... $250.00</p>
+            <p> Pastel sabor tres leches............... $300.00</p>
+            <p> Pastel sabor fresa............... $300.00</p>
+            <p> Pastel sabor cafe............... $300.00</p>
+        </article1>
+        <article2>
+            <h2>Menú de los diferentes adornos del pastel</h2>
+            <p>Pastel con fruta..................... + $50.00</p>
+            <p>Pastel con flan..................... + $80.00</p>
+            <p>Pastel con chantilly..................... + $30.00</p>
+            <p>Pastel cubierto de chocolate..................... + $60.00</p>
+            <p>Pastel cubierto de semillas..................... + $45.00</p>
+            <p>Pastel con queso philadelphia..................... + $30.00</p>
+        </article2>
+    </section>
+    <footer>
+        <a href="pedido.html"> <button>Hacer pedido</button></a>
+    </footer>
+</body>
+</html>

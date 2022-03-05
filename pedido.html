@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pastelero</title>
+        <style>
+            *{
+               box-sizing: border-box; 
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header{
+                background-color: violet;
+                padding: 20px;
+                text-align: center;
+                font-size: 25px;
+                color: white;
+            }
+            article{
+                float: left;
+                padding: 20px;
+                width: 100%;
+                background-color: turquoise;
+                height: auto;
+            }
+            footer{
+                background-color: rgb(195, 0, 255);
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            @media(max-widht:600px){
+                article{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>¡Haz tu pedido!</h1>
+            <img src="Pastel.png" alt="Pasteleria" width="150">
+        </header>
+        <footer>
+            <h2>Proceso de pedido</h2>
+        <form action="/accion.js" id="form1" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" form="form1"><br><br>
+            <label for="numero">Número de contacto:</label>
+            <input type="tel" id="=numero" name="numero" maxlength="10"><br><br>
+            <label for="correo">Ingrese un correo de contacto:</label>
+            <input type="email" id="correo" name="correo"><br><br>
+            <label for="input">Descripción general del pastel:</label>
+            <input type="text" id="input" name="input"><br><br>
+             
+            <h2>Seleccione el sabor del pastel</h2>
+            <input type="radio" id="Pastel sabor chocolate" name="pastel1" value="Pastel sabor chocolate">
+            <label for="Pastel sabor chocolate">Pastel sabor chocolate</label><br>
+            <input type="radio" id="Pastel sabor vainilla" name="pastel1" value="Pastel sabor vainilla">
+            <label for="Pastel sabor vainilla">Pastel sabor vainilla</label><br>
+            <input type="radio" id="Pastel sabor napotilano" name="pastel1" value="Pastel sabor napotilano">
+            <label for="Pastel sabor napotilano">Pastel sabor napotilano</label><br>
+            <input type="radio" id="Pastel sabor tres leches" name="pastel1" value="Pastel sabor tres leches">
+            <label for="Pastel sabor tres leches">Pastel sabor tres leches</label><br>
+            <input type="radio" id="Pastel sabor fresa" name="pastel1" value="Pastel sabor fresa">
+            <label for="Pastel sabor fresa">"Pastel sabor fresa</label><br>
+            <input type="radio" id="Pastel sabor cafe" name="pastel1" value="Pastel sabor cafe">
+            <label for="Pastel sabor cafe">Pastel sabor cafe</label><br>
+    
+            <h2>Seleccione los adornos del pastel</h2>
+            <input type="checkbox" id="pastel1" name="pastel1" value="Pastel con fruta">
+            <label for="pastel1">Pastel con fruta</label><br>
+            <input type="checkbox" id="pastel1" name="pastel1" value="Pastel con flan">
+            <label for="pastel1">Pastel con flan</label><br>
+            <input type="checkbox" id="pastel1" name="pastel1" value="Pastel con chantilly">
+            <label for="pastel1">Pastel con chantilly</label><br>
+            <input type="checkbox" id="pastel1" name="pastel1" value="Pastel cubierto de chocolate">
+            <label for="pastel1">Pastel cubierto de chocolate</label><br>
+            <input type="checkbox" id="pastel1" name="pastel1" value="Pastel cubierto de semillas">
+            <label for="pastel1">Pastel cubierto de semillas</label><br>
+            <input type="checkbox" id="pastel1" name="pastel1" value="Pastel con queso philadelphia">
+            <label for="pastel1">Pastel con queso philadelphia</label><br>
+    
+            <input type="submit" value="Submit">
+            <input type="reset">
+            <input type="button" id="Hacer pedido" name="Hacer pedido" value="Hacer pedido" onclick="alert('¡Gracias! Hiciste tu pedido');"><br><br>
+        </form>
+        </footer>
+    </body>
+</html>
